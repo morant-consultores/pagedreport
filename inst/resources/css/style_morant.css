@@ -49,66 +49,6 @@
   }
 }
 
-/* ----------------------- Table of contents ----------------------- */
-.toc a {
-  line-height: 30px;
-  text-decoration: none;
-  font-size: 14pt;
-  padding-right: .33em;
-}
-
-.toc ul {
-    list-style: none;
-    padding-left: 0;
-    overflow-x: hidden;
-    margin-right: 0%;
-}
-
-.toc li li{
-  padding-left: 1em;
-}
-
-.toc ul, .toc a, .toc a::after {
-  background-color: #ffffff;
-  color: var(--main-color);
-  font-weight: bold;
-}
-
-.toc ul > li > ul > li > a {
-  color: #000000;
-}
-
-/* page number */
-.toc a::after {
-  content: target-counter(attr(href), page);
-  float: right;
-  background: white;
-}
-
-.toc a.front-matter-ref::after {
-  content: target-counter(attr(href), page, lower-roman);
-}
-
-.toc .leaders::before {
-  float: left;
-  width: 0;
-  white-space: nowrap;
-  content: ". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ";
-}
-
-/* title */
-.toc-title {
-  padding-top: 0cm;
-  padding-bottom: 0cm;
-  background-color: transparent;
-  background-image: none;
-  text-align: left;
-  margin-right: 0%;
-  margin-left: 0%;
-  color: var(--main-color);
-  margin-top: 0%;
-}
-
 /* ------------------------ Pages -------------------------- */
 /* page size */
 @page {
@@ -174,6 +114,37 @@ h1.title {
     }
 }
 
+.pagedjs_left_page p {
+  margin-left: 15%;
+}
+
+.pagedjs_left_page ul {
+  margin-left: 15%;
+}
+
+.pagedjs_left_page ol {
+  margin-left: 15%;
+}
+
+.pagedjs_left_page h1 {
+  margin-left: 15%;
+}
+
+.pagedjs_left_page h2 {
+  margin-left: 15%;
+}
+
+.pagedjs_left_page h3 {
+  margin-left: 15%;
+}
+
+.pagedjs_left_page h4 {
+  margin-left: 15%;
+}
+
+.pagedjs_left_page #refs {
+  margin-left: 15%;
+}
 
 /* right page */
 @page:right {
@@ -220,15 +191,36 @@ h1.title {
     }
 }
 
-/* paragraph margins */
-.pagedjs_left_page p,  .pagedjs_left_page ul, .pagedjs_left_page h2, .pagedjs_left_page h3, .pagedjs_left_page h4, .pagedjs_left_page ol, .pagedjs_left_page #texto,
-.pagedjs_left_page #refs {
-  margin-right: 15%
+.pagedjs_right_page p {
+  margin-right: 15%;
 }
 
-.pagedjs_right_page p,  .pagedjs_right_page ul, .pagedjs_right_page h2, .pagedjs_right_page h3, .pagedjs_right_page h4 ,  .pagedjs_right_page ol , .pagedjs_left_page #texto,
+.pagedjs_right_page ul {
+  margin-right: 15%;
+}
+
+.pagedjs_right_page ol {
+  margin-right: 15%;
+}
+
+.pagedjs_right_page h1 {
+  margin-right: 15%;
+}
+
+.pagedjs_right_page h2 {
+  margin-right: 15%;
+}
+
+.pagedjs_right_page h3 {
+  margin-right: 15%;
+}
+
+.pagedjs_right_page h4 {
+  margin-right: 15%;
+}
+
 .pagedjs_right_page #refs {
-  margin-left: 15%
+  margin-right: 15%;
 }
 
 /* ------------------------ Front Cover --------------------- */
